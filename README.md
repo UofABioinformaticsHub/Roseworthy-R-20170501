@@ -2,7 +2,7 @@
 
 The two datasets of interest will be:
 
-- toothGrowth.csv
+- toothData.csv
   - A modified version of the inbuilt `ToothGrowth` dataset, so that dosage levels are changed to `Low`, `Med` and `High`
 - `insectsprays`
 

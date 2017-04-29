@@ -9,7 +9,9 @@ The two datasets of interest will be:
 
 ## Session 1 - Steve
 
-- Introduction to R Studio
+1. Introduction to R Studio  
+<tab> [Slides](101_IntroductionRStudio.html) or [Markdown](101_IntroductionRStudio.md)
+
   - Installing Packages
   - Using R Projects
   - Writing Scripts

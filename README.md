@@ -2,9 +2,8 @@
 
 The two datasets of interest will be:
 
-- toothData.csv
-  - A modified version of the inbuilt `ToothGrowth` dataset, so that dosage levels are changed to `Low`, `Med` and `High`
-- `insectsprays`
+- [toothData.csv](data/toothData.csv): A modified version of the inbuilt `ToothGrowth` dataset, so that dosage levels are changed to `Low`, `Med` and `High`
+- `InsectSprays`: The internal dataset accessed by typing `data(InsectSprays)`
 
 ## Session 1 - Steve
 

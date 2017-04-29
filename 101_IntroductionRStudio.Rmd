@@ -36,10 +36,12 @@ knitr::opts_chunk$set(echo = TRUE, include = TRUE,
     + We can see **everything** we need (directories, plots, code, history etc)
     + Integration with markdown, $\LaTeX$, bash, python, C++, version control software etc.
 
-## Getting Started | Before we start
+## Before we start
 
 1. Create a folder on your computer for today's material
     + We recommend `Documents/R-Training-20170501` in your home folder
+    + Create a sub-folder called `data`
 2. Go to https://uofabioinformaticshub.github.io/Roseworthy-R-20170501/
-    + Download the data file `toothData.csv` into `Documents/R-Training-20170501`
+    + Download the data file `toothData.csv` into  
+    `Documents/R-Training-20170501/data`
 3. Now we can open `RStudio`

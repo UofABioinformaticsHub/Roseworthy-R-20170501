@@ -1,0 +1,70 @@
+---
+title: "Introduction to R & RStudio"
+author: "Steve Pederson"
+date: "1 May, 2017"
+output: 
+  ioslides_presentation: 
+    css: default.css
+    fig_caption: yes
+    keep_md: yes
+    widescreen: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, include = TRUE, 
+											eval = TRUE, results = "markup",
+											message = FALSE, warning = FALSE)
+```
+
+```{r, echo=FALSE}
+x <- 2
+y <- 3
+```
+
+
+# Vectors
+
+## The R Environment | `c()`
+
+* One of the most useful functions is `c()`
+    + Stands for `combine` or `concatenate`
+    + We can join two (or more) objects into one object
+    
+```{r}
+z <- c(x, y)
+z
+```
+
+## Vectors
+
+* The ability for an `R` object to hold more than one value:
+    + Vectors are the fundamental unit in `R`
+    + Are a 1-dimensional set of values
+    + We can apply functions to an entire vector
+
+```{r, eval=FALSE}
+sqrt(z)
+2^z
+length(z)
+```
+
+## Vectors
+
+### What issues might crop up when applying a function to a vector?
+
+Hint: What types of values exist?
+
+## Vectors
+
+### What issues might crop up when applying a function to a vector?
+
+
+* Can we perform mathematical calculations on words?
+* Can we use numbers with decimal points to indicate positions in a ranked list?
+
+## Vectors | 6 atomic vectors
+
+`R` has 6 atomic vector types
+
+*  
+

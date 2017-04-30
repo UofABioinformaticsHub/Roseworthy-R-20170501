@@ -13,10 +13,11 @@ A more friendly version of the website can be found [here](https://uofabioinform
 ## Session 1 - Steve
 
 1. Introduction to R Studio  
-<tab> [Slides](101_IntroductionRStudio.html) or [Markdown](101_IntroductionRStudio.md)
+[Slides](101_IntroductionRStudio.html) or [Markdown](101_IntroductionRStudio.md)
+2. Vectors  
+[Slides](102_Vectors.html) or [Markdown](102_Vectors.md)
 
   - Installing Packages
-  - Using R Projects
   - Writing Scripts
 - Loading Data
   - Introduction to `data.frame` objects

@@ -141,7 +141,7 @@ as.logical(homeR)
 
 * When loading external data, `R` would traditionally convert text to categorical variables (`factors`)
 * Each value is changed to an `integer` specifying which category the value is from
-		+ The category name is given as an additional attribute (i.e. a `level`)  
+    + The category name is given as an additional attribute (i.e. a `level`)  
     + More memory efficient for true categorical variables
     + **Very** common in statistical analysis
 

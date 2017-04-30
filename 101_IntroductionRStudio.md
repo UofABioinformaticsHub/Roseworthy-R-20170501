@@ -18,7 +18,7 @@ Steve Pederson
 ## What is RStudio | Extra Flashy Features
 
 * Some very helpful features of `RStudio`
-		+ We can write scripts and **execute code** interactively
+    + We can write scripts and **execute code** interactively
     + Auto-completion by hitting the **\<tab\>** key
     + Use of `R Projects` to manage code/data for each project/analysis
     + We can see **everything** we need (directories, plots, code, history etc)

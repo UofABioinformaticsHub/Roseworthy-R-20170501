@@ -18,7 +18,7 @@ $\implies$ This is a bad idea in the real world
     + How do we submit our methods to our patent lawyer?
     + How do you explain your analysis to a collaborator
 * We usually record everything as a *script*
-    + Not just **best practice** $\implies$ near **essential practice**
+    + Not just **best practice** $\implies$ **essential practice**
 
 ## Writing Scripts
 
@@ -58,16 +58,17 @@ $\implies$ This is a bad idea in the real world
 library(dplyr)
 ```
 
-**We have not yet set this command to the `Console`**
+**NB: We have not yet sent this command to the `Console`**
 
 1. Go to this line in the script
 2. Linux/Windows: `Ctrl + Enter` or Mac `Command + Enter`
     + Ignore the friendly and helpful message
 3. We have now loaded our first package...
 
-**NB: If you don't have `dplyr` installed:**  
-`Tools > Install Packages... >` then enter `dplyr` and hit `Install`
-
+<p style="color:blue">
+**NB: If you don't have <code style="color:blue">dplyr</code> installed:**  
+`Tools > Install Packages... >` then type `dplyr` and hit `Install`
+</p>
 
 # Loading Data
 

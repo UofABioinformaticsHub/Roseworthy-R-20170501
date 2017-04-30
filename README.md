@@ -24,6 +24,8 @@ A more friendly version of the website can be found [here](https://uofabioinform
 
 ## Session 2 - Lloyd
 
+1. Working with `dplyr` [Rmarkdown](Session2_dplyr_lloyd.Rmd)
+
 - Logical Vectors
 - Subsetting using square brackets
 - `dplyr` functions: `filter()`, `mutate()`, `arrange()`, `select()`, `group_by()`, `summarise()` etc.

@@ -1,6 +1,6 @@
 # Roseworthy-R-20170501
 
-A more friendly version of the website can be found [here](https://uofabioinformaticshub.github.io/Roseworthy-R-20170501/README.html)
+A more friendly version of the website can be found [here](https://uofabioinformaticshub.github.io/Roseworthy-R-20170501/)
 
 ## The two datasets for the session will be
 
@@ -12,10 +12,8 @@ A more friendly version of the website can be found [here](https://uofabioinform
 
 ## Session 1 - Steve
 
-1. Introduction to R Studio  
-[Slides](101_IntroductionRStudio.html) or [Markdown](101_IntroductionRStudio.md)
-2. Vectors  
-[Slides](102_Vectors.html) or [Markdown](102_Vectors.md)
+1. Introduction to R Studio: [Slides](101_IntroductionRStudio.html) or [Markdown](101_IntroductionRStudio.md)
+2. Vectors: [Slides](102_Vectors.html) or [Markdown](102_Vectors.md)
 
   - Installing Packages
   - Writing Scripts

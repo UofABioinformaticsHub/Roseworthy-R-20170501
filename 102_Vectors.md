@@ -41,17 +41,18 @@ length(z)
 
 ## Vectors
 
-### What issues might crop up when applying a function to a vector?
+### Q: What issues might crop up when applying a function to a vector?
 
 Hint: What types of values exist?
 
 ## Vectors
 
-* **What issues might crop up when applying a function to a vector?**
-    + Can we perform mathematical calculations on words?
-    + Can we use numbers with decimal points to indicate positions in a ranked list?
+### Q: What issues might crop up when applying a function to a vector?
+
+* Can we perform mathematical calculations on words?
+* Can we use numbers with decimal points to indicate positions in a ranked list?
     
-* All values in a vector must be the **same type** of value
+### All values in a vector must be the **same type** of value
 
 ## Vectors | 6 atomic vectors
 
@@ -119,7 +120,7 @@ typeof(homeR)
 ## [1] "character"
 ```
 
-* Is my street number saved as an: `integer`, `double` or `character`?
+### Q: Is my street number saved as an: `integer`, `double` or `character`?
 
 ## Vectors | Working with `character` vectors
 

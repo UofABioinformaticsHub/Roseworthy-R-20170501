@@ -14,22 +14,11 @@ A more friendly version of the website can be found [here](https://uofabioinform
 
 1. Introduction to R Studio: [Slides](101_IntroductionRStudio.html) or [Markdown](101_IntroductionRStudio.md)
 2. Vectors: [Slides](102_Vectors.html) or [Markdown](102_Vectors.md)
-
-  - Installing Packages
-  - Writing Scripts
-- Loading Data
-  - Introduction to `data.frame` objects
-- Data Types
-  - Matrices
+3. Writing Scripts and Loading Data: [Slides](103_ScriptsAndData.html) or [Markdown](103_ScriptsAndData.md)
 
 ## Session 2 - Lloyd
 
-1. Working with `dplyr` [Rmarkdown](Session2_dplyr_lloyd.Rmd)
-
-- Logical Vectors
-- Subsetting using square brackets
-- `dplyr` functions: `filter()`, `mutate()`, `arrange()`, `select()`, `group_by()`, `summarise()` etc.
-- Using the magrittr (`%>%`)
+1. Working with `dplyr`: [Rmarkdown](Session2_dplyr_lloyd.Rmd)
 
 ## Session 3 - Rick
 

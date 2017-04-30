@@ -83,7 +83,7 @@ z == 2
 ## [1]  TRUE FALSE
 ```
 
-* Lloyd will spend more time on these later
+* Lloyd will spend more time on `logical` vectors later
 
 ## Vectors | 6 atomic vectors
 
@@ -96,6 +96,8 @@ as.logical(z)
 as.integer(z)
 as.character(z)
 ```
+
+<p style="font-size:30px; line-height:1.2">Note that as you start typing the name of the function, *RStudio will start to guess what you want* <br><br>**This is known as auto-completion** </p>
 
 ## Vectors | Working with `character` vectors
 
@@ -187,3 +189,12 @@ as.integer(groups)
 as.logical(groups)
 ```
 
+## Cleanup
+
+Before the next section:
+
+1. Go to the `Environment Tab`
+2. Click the "Broom" icon (![](images/broom.png))
+3. Answer `Yes` to the question "Are you sure..."
+
+We've just deleted all our `R` objects and have a clean `Environment`

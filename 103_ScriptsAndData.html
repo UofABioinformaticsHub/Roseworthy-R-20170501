@@ -21,7 +21,7 @@
       // Slide settings
       settings: {
                 title: 'Introduction to R &amp; RStudio',
-                        subtitle: '02: Vectors',
+                        subtitle: '03: Writing Scripts &amp; Loading Data',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -99,192 +99,104 @@
           </hgroup>
   </slide>
 
-<slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Vectors</h2></hgroup><article  id="vectors">
+<slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Writing Scripts</h2></hgroup><article  id="writing-scripts">
 
-</article></slide><slide class=''><hgroup><h2>The R Environment </h2><h3> <code>c()</code></h3></hgroup><article  id="the-r-environment-c">
-
-<ul>
-<li>One of the most useful functions is <code>c()</code>
+</article></slide><slide class=''><hgroup><h2>Writing Scripts</h2></hgroup><article  id="writing-scripts-1">
 
 <ul>
-<li>Stands for <code>combine</code> or <code>concatenate</code></li>
-<li>We can join two (or more) objects into one object</li>
+<li>So far we have entered everything directly in the <code>Console</code><br/>\(\implies\) This is a bad idea in the real world
+
+<ul>
+<li>We have no record of what we&#39;ve done</li>
+<li>How do we remember anything 6 months later?</li>
+<li>How do we submit our methods to our patent lawyer?</li>
+<li>How do you explain your analysis to a collaborator</li>
+</ul></li>
+<li>We usually record everything as a <em>script</em>
+
+<ul>
+<li>Not just <strong>best practice</strong> \(\implies\) near <strong>essential practice</strong></li>
 </ul></li>
 </ul>
 
-<pre class = 'prettyprint lang-r'>z &lt;- c(x, y)
-z</pre>
-
-<pre >## [1] 2 3</pre>
-
-</article></slide><slide class=''><hgroup><h2>Vectors</h2></hgroup><article  id="vectors-1">
+</article></slide><slide class=''><hgroup><h2>Writing Scripts</h2></hgroup><article  id="writing-scripts-2">
 
 <ul>
-<li>The ability for an <code>R</code> object to hold more than one value:
+<li><code>File</code> &gt; <code>New File</code> &gt; <code>R Script</code>
 
 <ul>
-<li>Vectors are the fundamental unit in <code>R</code></li>
-<li>Are a 1-dimensional set of values</li>
-<li>We can apply functions to an entire vector</li>
+<li>A new text file will now be in the top left quarter</li>
+<li>Save this as <code>loadingData.R</code></li>
+</ul></li>
+<li>Giving it the suffix <code>.R</code>:
+
+<ul>
+<li>Helps RStudio with auto completion</li>
+<li>Helps us find our R scripts in a messy folder</li>
+</ul></li>
+<li>We enter text and <code>R</code> commands in this file
+
+<ul>
+<li>They are <strong>not</strong> executed until we send them to the <code>Console</code></li>
 </ul></li>
 </ul>
 
-<pre class = 'prettyprint lang-r'>sqrt(z)
-2^z
-length(z)</pre>
-
-</article></slide><slide class=''><hgroup><h2>Vectors</h2></hgroup><article  id="vectors-2">
-
-<h3>What issues might crop up when applying a function to a vector?</h3>
-
-<p>Hint: What types of values exist?</p>
-
-</article></slide><slide class=''><hgroup><h2>Vectors</h2></hgroup><article  id="vectors-3">
+</article></slide><slide class=''><hgroup><h2>Structure Of A Script</h2></hgroup><article  id="structure-of-a-script">
 
 <ul>
-<li><strong>What issues might crop up when applying a function to a vector?</strong>
+<li>No formal requirements (unlike <code>bash</code>)</li>
+<li>Usually have a mix of <code>R</code> commands, and comments
 
 <ul>
-<li>Can we perform mathematical calculations on words?</li>
-<li>Can we use numbers with decimal points to indicate positions in a ranked list?</li>
+<li>Comments explain what you&#39;re intending to &#39;future&#39; you and others</li>
+<li>Comments in an <code>R</code> script start with <code>#</code></li>
+<li>Anything following <code>#</code> are ignored by the <code>Console</code></li>
 </ul></li>
-<li>All values in a vector must be the <strong>same type</strong> of value</li>
+<li>I usually start mine by loading packages</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Vectors </h2><h3> 6 atomic vectors</h3></hgroup><article  id="vectors-6-atomic-vectors">
+</article></slide><slide class=''><hgroup><h2>Loading Packages</h2></hgroup><article  id="loading-packages">
+
+<ul>
+<li>Similar functions are collected into <code>packages</code> (e.g. <code>base</code>)
+
+<ul>
+<li><code>R</code> always loads <em>stats</em>, <em>graphics</em>, <em>grDevices</em>, <em>utils</em>, <em>datasets</em>, <em>methods</em> and <em>base</em> at startup</li>
+<li><strong>NEVER</strong> use the <code>Packages</code> Tab to load packages</li>
+<li>Remember, we <strong>want a record</strong> of literally everything we do
+
+<ul>
+<li><code>Tools &gt; Global Options &gt; Packages &gt;</code> <strong>Uncheck</strong> <code>Enable Packages Pane</code></li>
+</ul></li>
+</ul></li>
+<li>Let&#39;s start by loading some packages</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Loading Packages</h2></hgroup><article  id="loading-packages-1">
+
+<p>Lloyd will take you through the <code>dplyr</code> package later</p>
+
+<ul>
+<li>Contains functions for working with the data we&#39;re about to load</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>library(dplyr)</pre>
+
+<p><strong>We have not yet set this command to the <code>Console</code></strong></p>
 
 <ol>
-<li><code>logical</code> (<code>TRUE</code> or <code>FALSE</code>)</li>
-<li><code>integer</code></li>
-<li><code>numeric</code> (or <code>double</code>): Numbers with decimal points</li>
-<li><code>character</code></li>
+<li>Go to this line in the script</li>
+<li>Linux/Windows: <code>Ctrl + Enter</code> or Mac <code>Command + Enter</code>
+
+<ul>
+<li>Ignore the friendly and helpful message</li>
+</ul></li>
+<li>We have now loaded our first package&#8230;</li>
 </ol>
 
-<ul>
-<li>Two other types we&#39;ll ignore:
+</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Loading Data</h2></hgroup><article  id="loading-data">
 
-<ul>
-<li><code>raw</code> (bytes) and <code>complex</code> (\(i =\sqrt{-1}\))</li>
-</ul></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Vectors </h2><h3> 6 atomic vectors</h3></hgroup><article  id="vectors-6-atomic-vectors-1">
-
-<pre class = 'prettyprint lang-r'>z &gt; 0</pre>
-
-<pre >## [1] TRUE TRUE</pre>
-
-<pre class = 'prettyprint lang-r'>z == 2</pre>
-
-<pre >## [1]  TRUE FALSE</pre>
-
-<ul>
-<li>Lloyd will spend more time on <code>logical</code> vectors later</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Vectors </h2><h3> 6 atomic vectors</h3></hgroup><article  id="vectors-6-atomic-vectors-2">
-
-<p>We can coerce some types of values into another type</p>
-
-<pre class = 'prettyprint lang-r'>typeof(z)
-as.logical(z)
-as.integer(z)
-as.character(z)</pre>
-
-<p style="font-size:30px; line-height:1.2">
-
-Note that as you start typing the name of the function, <em>RStudio will start to guess what you want</em> <br><br><strong>This is known as auto-completion</strong>
-
-</p>
-
-</article></slide><slide class=''><hgroup><h2>Vectors </h2><h3> Working with <code>character</code> vectors</h3></hgroup><article  id="vectors-working-with-character-vectors">
-
-<pre class = 'prettyprint lang-r'>homeR &lt;- c(742, &quot;Evergreen&quot;, &quot;Terrace&quot;)
-length(homeR)</pre>
-
-<pre >## [1] 3</pre>
-
-<pre class = 'prettyprint lang-r'>typeof(homeR)</pre>
-
-<pre >## [1] &quot;character&quot;</pre>
-
-<ul>
-<li>Is my street number saved as an: <code>integer</code>, <code>double</code> or <code>character</code>?</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Vectors </h2><h3> Working with <code>character</code> vectors</h3></hgroup><article  id="vectors-working-with-character-vectors-1">
-
-<p>Can we convert this to any of the other vector types?</p>
-
-<pre class = 'prettyprint lang-r'>as.numeric(homeR)
-as.logical(homeR)</pre>
-
-<p>Try it and see&#8230;</p>
-
-</article></slide><slide class=''><hgroup><h2>Vectors </h2><h3> Working with <code>character</code> vectors</h3></hgroup><article  id="vectors-working-with-character-vectors-2">
-
-<p>Can we convert this to any of the other vector types?</p>
-
-<pre class = 'prettyprint lang-r'>as.numeric(homeR)
-as.logical(homeR)</pre>
-
-<ul>
-<li><strong>Welcome to your first official error message!</strong>
-
-<ul>
-<li>Does <code style="color:red">Warning message: NAs introduced by coercion</code> make any sense?</li>
-<li><code>R</code> was <em>able to coerce</em> <code>&quot;742&quot;</code> to a <em>numeric</em> value</li>
-<li><code>R</code> was <em>unable to coerce</em> the other words (for obvious reasons)</li>
-</ul></li>
-</ul>
-
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Factors</h2></hgroup><article  id="factors">
-
-</article></slide><slide class=''><hgroup><h2>Introducing factors</h2></hgroup><article  id="introducing-factors">
-
-<p><strong>There is a trap for young players&#8230;</strong></p>
-
-<ul>
-<li>When loading external data, <code>R</code> would traditionally convert text to categorical variables (<code>factors</code>)</li>
-<li>Each value is changed to an <code>integer</code> specifying which category the value is from + The category name is given as an additional attribute (i.e. a <code>level</code>)
-
-<ul>
-<li>More memory efficient for true categorical variables</li>
-<li><strong>Very</strong> common in statistical analysis</li>
-</ul></li>
-</ul>
-
-<p>Automatic conversion is not as common now, but important to know about!</p>
-
-</article></slide><slide class=''><hgroup><h2>Introducing factors</h2></hgroup><article  id="introducing-factors-1">
-
-<pre class = 'prettyprint lang-r'>groups &lt;- c(&quot;A&quot;, &quot;A&quot;, &quot;B&quot;)
-groups &lt;- as.factor(groups)
-groups</pre>
-
-<pre >## [1] A A B
-## Levels: A B</pre>
-
-</article></slide><slide class=''><hgroup><h2>Introducing factors</h2></hgroup><article  id="introducing-factors-2">
-
-<p>Now prepare to be amazed&#8230;</p>
-
-<pre class = 'prettyprint lang-r'>typeof(groups)
-levels(groups)
-as.integer(groups)
-as.logical(groups)</pre>
-
-</article></slide><slide class=''><hgroup><h2>Cleanup</h2></hgroup><article  id="cleanup">
-
-<p>Before the next section:</p>
-
-<ol>
-<li>Go to the <code>Environment Tab</code></li>
-<li>Click the &quot;Broom&quot; icon (<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXCAYAAAD+4+QTAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QQeDiAWP0RYEgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAMiSURBVEjHvZVNaFxVFMd/5+bNx5tkOq2SmqREEayRxooIpqIgiBbcuFEp6KaLirYLN27cim5KK+JCXRaUWrsRBLspUg3FhRSqRQ1aa5LS5quZpJmPvDczb96b08W89+ZlMlJQxgvvg3v/53//5+OeK6qq9HlYFcft9x4Y/odhCQKA0jtq0Xo0/g3OqCqKxiBBQNtfQWLwf8GZjgCNwSIC3Yrvgpv74QyXjr3MN68c3IazOvbS0+2kyn/CzU2fpXL6LIsbNQ68f3IbzuqSmXC1hzc9cH9fOEPly6+4vuHw1AcfMfro49twVux6SNpRqAk1Gr7b625lHsRj8ZdLlE99wc2a8vTxTxiZ2LcFF/FZW11PqI/irRJPB806vvs7tinhNxfYHcwwa2eZevc9RiYmQTQuhiSf6YREt4ZEE1MquJUllmc+5+fPDuO583iVNbyRHA8dfZ09jz0R43rxGTGCiCBiEBEMIEYwAkbampZuXObKpy+Qbtxg8tXDXD71MeurS9Sqm6RzGYxIG2vatt18xiCIED4KJvRFhPLtWcqrF3lwzOXAkXeYm/6WlT9m2fvSMRYunKe4uELVDQ1EEaAnn+PW2qutsMmooEEZb/NXBlpVLCsAk2Jj5U+CRoWr574m+8AUgdymcW2GR974juH7xtvhEQFVuvnabUXCiTAdXukcQe0WdT9Hyh7GKV0lbWUIrDHGn3+N6+dPU+de0vuPsntkPFEodAolwWei8EQYERjIPcl6cZPAd3A2rpFK2XjNLHWngrPZxJ7YR2Z0L8+8+GZsG52sXnzGSCdR0X96aII9k29TXC5ijE0Q2NScEjXXo3zrCnW3wf1Th8jag4kkh4nuwScNz9Ou9tkJW22d36ZPYFFiIL2T0uoclgRU/TGeO/QhVjp79z6vIF6zGXdllfZ58v2AhufhuC7ra0v8dfEk+dQa+R2D3Fz2mG89y/DowxTyQ+wq5CkUdrCzkCefH2TItkmnUlv4jBC5J2H5dR4QrEyB4f1vsVK9h4VVj2LmILnCOKotQGmpxvkwUePv5vN9v/93vIj0//r9/sef+r7JHY9eUuobo+OKAAAAAElFTkSuQmCC' title=''/>)</li>
-<li>Answer <code>Yes</code> to the question &quot;Are you sure&#8230;&quot;</li>
-</ol>
-
-<p>We&#39;ve just deleted all our <code>R</code> objects and have a clean <code>Environment</code></p></article></slide>
+</article></slide><slide class=''><hgroup><h2>Loading Data</h2></hgroup><article  id="loading-data-1"></article></slide>
 
 
   <slide class="backdrop"></slide>

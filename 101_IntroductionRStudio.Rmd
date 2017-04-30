@@ -1,5 +1,6 @@
 ---
 title: "Introduction to R & RStudio"
+subtitle: "01: Introduction"
 author: "Steve Pederson"
 date: "1 May, 2017"
 output: 

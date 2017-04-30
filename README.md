@@ -20,7 +20,6 @@ A more friendly version of the website can be found [here](https://uofabioinform
 - Loading Data
   - Introduction to `data.frame` objects
 - Data Types
-  - Vectors
   - Matrices
 
 ## Session 2 - Lloyd

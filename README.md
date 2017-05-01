@@ -22,3 +22,4 @@ A more friendly version of the website can be found [here](https://uofabioinform
 ## Session 3 - Rick
 
 1. Data Visualisation using `ggplot2`: [Slides](03_Data_Visualisation/Data_Visualisation.html) or [Markdown](03_Data_Visualisation/Data_Visualisation.md)
+2. The example [RScript](03_Data_Visualisation/Data_Visualisation-2.R)

@@ -17,7 +17,7 @@ A more friendly version of the website can be found [here](https://uofabioinform
 
 ## Session 2 - Lloyd
 
-1. Working with `dplyr`: [Rmarkdown](02_Data_Manipulation/Session2_dplyr_lloyd.Rmd)
+1. Working with `dplyr`: [Rmarkdown](02_Data_Manipulation/Session2_dplyr_lloyd.Rmd) or [PDF](02_Data_Manipulation/Session2_dplyr_lloyd.pdf)
 
 ## Session 3 - Rick
 

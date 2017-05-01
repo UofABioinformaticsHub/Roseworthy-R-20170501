@@ -46,7 +46,7 @@ Steve Pederson
 
 ## The RStudio Interface
 
-<img src="images/RStudio.png" width="800mm" style="display: block; margin: auto;" />
+<img src="../images/RStudio.png" width="800mm" style="display: block; margin: auto;" />
 
 ## The RStudio Interface | The R Console
 

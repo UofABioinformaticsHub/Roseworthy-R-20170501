@@ -60,7 +60,7 @@ knitr::opts_chunk$set(echo = TRUE, include = TRUE,
 ## The RStudio Interface
 
 ```{r, echo = FALSE, eval=TRUE, results='asis', out.width='800mm', fig.align='center'}
-knitr::include_graphics("images/RStudio.png")
+knitr::include_graphics("../images/RStudio.png")
 ```
 
 ## The RStudio Interface | The R Console
